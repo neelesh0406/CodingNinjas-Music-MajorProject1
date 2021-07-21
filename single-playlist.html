@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">    
+    
+
+    <link rel="stylesheet" href="single-playlist.css">
+    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="responsive-playlist.css">   
+    <title>Single Playlist</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+
+            <div class="logo d-flex-row flex-jc-se flex-ai-center">
+
+                <img src="static/logo.png" alt="" class="animate__animated animate__heartBeat animate__infinite">
+                <div id="website-title">
+                    <h3>Neel</h3>
+                    <h2>Beats</h2>
+                </div>
+
+            </div>
+
+            <div id="nav-fav">
+                <a href="#">Favourites</a>
+            </div>
+            
+            <!-- A search bar that can be used anywhere if the height isn't changed -->
+            <div class="search-bar">
+                <label for="nav-search"><i class="search-icon fas fa-search"></i></label>
+                <input type="text" name="nav-search" id="nav-search" placeholder="Search">
+                <label for="nav-search"><i class="microphone-icon fas fa-microphone"></i></label>
+            </div>
+
+            <div class="notification-bell">
+                <i class="fas fa-bell"></i>
+            </div>
+
+            <div class="profile-pic">
+                <img src="static/user.jpeg" alt="">
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Main is divided into 2 parts  -->
+
+        <!-- 1st section i.e the left one -->
+        <section id="artist-profile-playlist">
+
+            <!-- The div where Artist's picture, name & description appears -->
+            <div class="artist-box d-flex-row ">
+
+                <!-- Artist's Image -->
+                <div class="artist-box-img">
+                    <img src="static/popular-artists/queen.jpeg" alt="">
+                </div>
+
+                <!-- Artist's Description -->
+                <div class="artist-box-profile d-flex-row flex-ai-center">
+                    <div class="artist-box-desc">
+                        <!-- Band name  -->
+                        <h2 class="heading-big">Queen</h2>
+                        <!-- short description  -->
+                        <h5 style="margin-bottom: 2vh;">British Band</h5>
+                        <!-- description  -->
+                        <p class="light-text">Queen are a British rock band formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock.</p>
+                        <!-- number of Followers -->
+                        <div class="artist-followers">9200 Followers</div>
+                        <!-- Play All songs of this artist button -->
+                        <button type="submit" class="artist-play-all">Play All</button>
+                        <!-- A follow button for the artist -->
+                        <button type="submit" class="artist-follow">Follow</button>
+                        <div class="artist-songs-count">150 Tracks | 90 Albums</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Playlist of all songs by the artist  -->
+            <div id="artist-playlist" class="d-flex-col">
+
+                <!-- playlist item 1 -->
+                <!-- Each item is a flex with 3 divs (left, mid, right) -->
+                <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb">
+                    <!-- Left -->
+                    <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                        <!-- Song number -->
+                        <p class="light-text">
+                            01
+                        </p>
+                        <!-- overlay-play-2 is a class which displays play button on the song's img -->
+                        <div class="overlay-play-2">
+                            <img src="static/songs/queen-rock.jpg" alt="">
+                            <div class="overlay-play-2-inner">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <!-- Song name & artist's name -->
+                        <div>
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Mid with length of song-->
+                    <div class="artist-mid-content">
+                        <p class="light-text">5:23</p>
+                    </div>
+                    <!-- right with like button & add to playlist button  -->
+                    <div class="artist-right-content">
+                        <span>
+                            <a href=""><i class="far fa-heart"></i></a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-plus"></i></a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- playlist item 2 -->
+                <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb">
+                    <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                        <p class="light-text">
+                            02
+                        </p>
+                        <div class="overlay-play-2">
+                            <img src="static/songs/queen-rock.jpg" alt="">
+                            <div class="overlay-play-2-inner">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                    </div>
+                    <div class="artist-mid-content">
+                        <p class="light-text">5:23</p>
+                    </div>
+                    <div class="artist-right-content">
+                        <span>
+                            <a href=""><i class="far fa-heart"></i></a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-plus"></i></a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- playlist item 3 -->
+                <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb">
+                    <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                        <p class="light-text">
+                            03
+                        </p>
+                        <div class="overlay-play-2">
+                            <img src="static/songs/queen-rock.jpg" alt="">
+                            <div class="overlay-play-2-inner">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                    </div>
+                    <div class="artist-mid-content">
+                        <p class="light-text">5:23</p>
+                    </div>
+                    <div class="artist-right-content">
+                        <span>
+                            <a href=""><i class="far fa-heart"></i></a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-plus"></i></a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- playlist item 4 -->
+                <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb">
+                    <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                        <p class="light-text">
+                            04
+                        </p>
+                        <div class="overlay-play-2">
+                            <img src="static/songs/queen-rock.jpg" alt="">
+                            <div class="overlay-play-2-inner">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                    </div>
+                    <div class="artist-mid-content">
+                        <p class="light-text">5:23</p>
+                    </div>
+                    <div class="artist-right-content">
+                        <span>
+                            <a href=""><i class="far fa-heart"></i></a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-plus"></i></a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- playlist item 5 -->
+                <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb">
+                    <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                        <p class="light-text">
+                            05
+                        </p>
+                        <div class="overlay-play-2">
+                            <img src="static/songs/queen-rock.jpg" alt="">
+                            <div class="overlay-play-2-inner">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                    </div>
+                    <div class="artist-mid-content">
+                        <p class="light-text">5:23</p>
+                    </div>
+                    <div class="artist-right-content">
+                        <span>
+                            <a href=""><i class="far fa-heart"></i></a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-plus"></i></a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- playlist item 6 -->
+                <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb">
+                    <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                        <p class="light-text">
+                            06
+                        </p>
+                        <div class="overlay-play-2">
+                            <img src="static/songs/queen-rock.jpg" alt="">
+                            <div class="overlay-play-2-inner">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                    </div>
+                    <div class="artist-mid-content">
+                        <p class="light-text">5:23</p>
+                    </div>
+                    <div class="artist-right-content">
+                        <span>
+                            <a href=""><i class="far fa-heart"></i></a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-plus"></i></a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- playlist item 7 -->
+                <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb">
+                    <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                        <p class="light-text">
+                            07
+                        </p>
+                        <div class="overlay-play-2">
+                            <img src="static/songs/queen-rock.jpg" alt="">
+                            <div class="overlay-play-2-inner">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                    </div>
+                    <div class="artist-mid-content">
+                        <p class="light-text">5:23</p>
+                    </div>
+                    <div class="artist-right-content">
+                        <span>
+                            <a href=""><i class="far fa-heart"></i></a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-plus"></i></a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- playlist item 8 -->
+                <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb">
+                    <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                        <p class="light-text">
+                            08
+                        </p>
+                        <div class="overlay-play-2">
+                            <img src="static/songs/queen-rock.jpg" alt="">
+                            <div class="overlay-play-2-inner">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                    </div>
+                    <div class="artist-mid-content">
+                        <p class="light-text">5:23</p>
+                    </div>
+                    <div class="artist-right-content">
+                        <span>
+                            <a href=""><i class="far fa-heart"></i></a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-plus"></i></a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- playlist item 9 -->
+                <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb">
+                    <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                        <p class="light-text">
+                            09
+                        </p>
+                        <div class="overlay-play-2">
+                            <img src="static/songs/queen-rock.jpg" alt="">
+                            <div class="overlay-play-2-inner">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                    </div>
+                    <div class="artist-mid-content">
+                        <p class="light-text">5:23</p>
+                    </div>
+                    <div class="artist-right-content">
+                        <span>
+                            <a href=""><i class="far fa-heart"></i></a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-plus"></i></a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- playlist item 10 -->
+                <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb">
+                    <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                        <p class="light-text">
+                            10
+                        </p>
+                        <div class="overlay-play-2">
+                            <img src="static/songs/queen-rock.jpg" alt="">
+                            <div class="overlay-play-2-inner">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                    </div>
+                    <div class="artist-mid-content">
+                        <p class="light-text">5:23</p>
+                    </div>
+                    <div class="artist-right-content">
+                        <span>
+                            <a href=""><i class="far fa-heart"></i></a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fas fa-plus"></i></a>
+                        </span>
+                    </div>
+                </div>
+
+                
+
+            </div>
+            <!-- ///////////////////////////////////////////////// -->
+
+
+        </section>
+
+        <!-- These 2 sections are just 2 buttons visible at low resolutions -->
+        <!-- For sliding aside section  -->
+        <!-- clicking on MORE shows the Aside section  -->
+        <!-- clicking on HOME closes that and shows the Home Page -->
+        <section class="more">
+            <a href="#playlist-aside">&lt;&lt; MORE</a>
+        </section>
+        <section class="close">
+            <a href="#">HOME</a>
+        </section>
+
+        
+        <section id="playlist-aside">
+            <div class="similar-artists">
+                <!-- Heading  -->
+                <div class="heading-playlist-aside d-flex-row flex-jc-sb flex-ai-baseline">
+                    <h4 class="heading-big">Similar Artists</h4>
+                    <p>
+                        <a class="light-text" href="#queue-option-box">View All</a>
+                    </p>
+                </div>
+
+                <!-- Similar Artist content  -->
+                <div class="similar-artists-content d-flex-col">
+
+                    <!-- Every song/item is enclosed within a song-container div -->
+                    <!-- reused from Latest-release div so the content within classes is different -->
+                    <div class="song-container d-flex-row flex-jc-sb">
+
+                        <!-- This element contains song's image, band name, short info  -->
+                        <div class="img-name-date-box d-flex-row">
+                            <div class="overlay-play">
+                                <img src="static/songs/behind.png" alt="">
+                                <a href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                            
+                            <div class="song-name-date">
+                                <h6 class="heading-small">Imagine Dragons</h6>
+                                <p class="light-text">pop band</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Song's interval & 3-dots for drop-down menu  -->
+                        <div class="dots-time">
+                            <a href="#0"><i class="fas fa-ellipsis-h"></i></a>
+                            <p class="light-text">2:35</p>
+                        </div>
+                    </div>
+
+                    <!-- 2nd item in the list  -->
+                    <div class="song-container d-flex-row flex-jc-sb">
+
+                        <!-- This element contains song's image, band name, short info  -->
+                        <div class="img-name-date-box d-flex-row">
+                            <div class="overlay-play">
+                                <img src="static/songs/cheap.png" alt="">
+                                <a href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                            
+                            <div class="song-name-date">
+                                <h6 class="heading-small">Sia</h6>
+                                <p class="light-text">American Artist</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Song's interval & 3-dots for drop-down menu  -->
+                        <div class="dots-time">
+                            <a href="#0"><i class="fas fa-ellipsis-h"></i></a>
+                            <p class="light-text">2:35</p>
+                        </div>
+                    </div>
+
+                    <!-- 3rd item in the list  -->
+                    <div class="song-container d-flex-row flex-jc-sb">
+
+                        <!-- This element contains song's image, band name, short info  -->
+                        <div class="img-name-date-box d-flex-row">
+                            <div class="overlay-play">
+                                <img src="static/songs/starboy.png" alt="">
+                                <a href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                            
+                            <div class="song-name-date">
+                                <h6 class="heading-small">The Weeknd</h6>
+                                <p class="light-text">Black artist</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Song's interval & 3-dots for drop-down menu  -->
+                        <div class="dots-time">
+                            <a href="#0"><i class="fas fa-ellipsis-h"></i></a>
+                            <p class="light-text">2:35</p>
+                        </div>
+                    </div>
+
+                    <!-- 4th item in the list  -->
+                    <div class="song-container d-flex-row flex-jc-sb">
+
+                        <!-- This element contains song's image, band name, short info  -->
+                        <div class="img-name-date-box d-flex-row">
+                            <div class="overlay-play">
+                                <img src="static/songs/happier.png" alt="">
+                                <a href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                            
+                            <div class="song-name-date">
+                                <h6 class="heading-small">The Weeknd</h6>
+                                <p class="light-text">Black artist</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Song's interval & 3-dots for drop-down menu  -->
+                        <div class="dots-time">
+                            <a href="#0"><i class="fas fa-ellipsis-h"></i></a>
+                            <p class="light-text">2:35</p>
+                        </div>
+                    </div>
+
+                    <!-- 5th item in the list  -->
+                    <div class="song-container d-flex-row flex-jc-sb">
+
+                        <!-- This element contains song's image, band name, short info  -->
+                        <div class="img-name-date-box d-flex-row">
+                            <div class="overlay-play">
+                                <img src="static/songs/starboy.png" alt="">
+                                <a href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                            
+                            <div class="song-name-date">
+                                <h6 class="heading-small">The Weeknd</h6>
+                                <p class="light-text">Black artist</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Song's interval & 3-dots for drop-down menu  -->
+                        <div class="dots-time">
+                            <a href="#0"><i class="fas fa-ellipsis-h"></i></a>
+                            <p class="light-text">2:35</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="recently-played">
+                <div class="heading-playlist-aside d-flex-row flex-jc-sb flex-ai-baseline">
+                    <h4 class="heading-big">Recently Played</h4>
+                    <p>
+                        <a class="light-text" href="#queue-option-box">View All</a>
+                    </p>
+                </div>
+
+                <!-- Recently played content - classes Reused from .artist-playlist-item -->
+                <div class="recently-played-content d-flex-col">
+
+                    <!-- playlist item 1 -->
+                    <!-- Each item is a flex with 3 divs (left, mid, right) -->
+                    <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb bg-transparent">
+                        <!-- Left -->
+                        <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                            <!-- Song number -->
+                            <p class="light-text">
+                                01
+                            </p>
+                            <!-- overlay-play-2 is a class which displays play button on the song's img -->
+                            <div class="overlay-play-2">
+                                <img src="static/songs/illuminate.png" alt="">
+                                <div class="overlay-play-2-inner">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mid with Naame of song & Artist name-->
+                        <div class="artist-mid-content">
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                        <div class="artist-right-content">
+                            <span>
+                                <a href=""><i class="far fa-heart"></i></a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- playlist item 2 -->
+                    <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb bg-transparent">
+                        <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                            <p class="light-text">
+                                01
+                            </p>
+                            <div class="overlay-play-2">
+                                <img src="static/songs/queen-rock.jpg" alt="">
+                                <div class="overlay-play-2-inner">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-mid-content">
+                            <h5 class="heading-small">
+                                We will rock you
+                            </h5>
+                            <p class="light-text">
+                                Queen
+                            </p>
+                        </div>
+                        <div class="artist-right-content">
+                            <span>
+                                <a href=""><i class="far fa-heart"></i></a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- playlist item 3 -->
+                    <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb bg-transparent">
+                        <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                            <p class="light-text">
+                                03
+                            </p>
+                            <div class="overlay-play-2">
+                                <img src="static/songs/ishq.png" alt="">
+                                <div class="overlay-play-2-inner">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-mid-content">
+                            <h5 class="heading-small">
+                                Ishq by Badshah
+                            </h5>
+                            <p class="light-text">
+                                Baadshah
+                            </p>
+                        </div>
+                        <div class="artist-right-content">
+                            <span>
+                                <a href=""><i class="far fa-heart"></i></a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- playlist item 4 -->
+                    <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb bg-transparent">
+                        <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                            <p class="light-text">
+                                04
+                            </p>
+                            <div class="overlay-play-2">
+                                <img src="static/songs/perfect.png" alt="">
+                                <div class="overlay-play-2-inner">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-mid-content">
+                            <h5 class="heading-small">
+                                Perfect by Ed She
+                            </h5>
+                            <p class="light-text">
+                                Ed Sheeran
+                            </p>
+                        </div>
+                        <div class="artist-right-content">
+                            <span>
+                                <a href=""><i class="far fa-heart"></i></a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- playlist item 5 -->
+                    <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb bg-transparent">
+                        <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                            <p class="light-text">
+                                05
+                            </p>
+                            <div class="overlay-play-2">
+                                <img src="static/songs/chal.png" alt="">
+                                <div class="overlay-play-2-inner">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-mid-content">
+                            <h5 class="heading-small">
+                                Chal mere sath
+                            </h5>
+                            <p class="light-text">
+                                lucky ali
+                            </p>
+                        </div>
+                        <div class="artist-right-content">
+                            <span>
+                                <a href=""><i class="far fa-heart"></i></a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- playlist item 6 -->
+                    <div class="artist-playlist-item d-flex-row flex-ai-center flex-jc-sb bg-transparent">
+                        <div class="artist-left-content d-flex-row flex-ai-center flex-jc-sb">
+                            <p class="light-text">
+                                06
+                            </p>
+                            <div class="overlay-play-2">
+                                <img src="static/songs/perfect.png" alt="">
+                                <div class="overlay-play-2-inner">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-mid-content">
+                            <h5 class="heading-small">
+                                Perfect by Ed She
+                            </h5>
+                            <p class="light-text">
+                                Ed Sheeran
+                            </p>
+                        </div>
+                        <div class="artist-right-content">
+                            <span>
+                                <a href=""><i class="far fa-heart"></i></a>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Bottom Music Player -->
+        <section id="bottom-player">
+            <div class="bottom-player-outer d-flex-row flex-jc-sb">
+
+                <div class="bottom-now-playing d-flex-row flex-ai-center">
+
+                    <img src="static/songs/starboy.png" alt="">
+                    <div class="bottom-playing-desc">
+                        <div>Starboy by The Weeknd</div>
+                        <div class="light-text">Weeknd</div>
+                    </div>
+                    <div class="like-no-icon">
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-ban"></i></span>
+                    </div>
+
+                </div> 
+                <div class="bottom-play-progress d-flex-col flex-ai-center">
+                    <div class="bottom-music-controls d-flex-row flex-jc-sa flex-ai-center">
+                        <a href=""><i class="fas fa-random"></i></a>
+                        <a href=""><i class="fas fa-step-backward"></i></a>
+                        <div class="bottom-pause-button">
+                            <a href=""><i class="fas fa-pause"></i></a>
+                        </div>
+                        <a href=""><i class="fas fa-step-forward"></i></a>
+                        <a href=""><i class="fas fa-redo"></i></a>
+                    </div>
+                    <div class="progress-bar-status d-flex-row flex-jc-se flex-ai-center">
+                        <span class="light-text">1:22</span>
+                        <div class="progress-bar-container">
+                            <input type="range" min="1" max="100" value="20" class="progress-bar" id="myProg">
+                        </div>
+                        <span class="light-text">4:32</span>
+                    </div>
+                </div>
+                <div class="bottom-music-options d-flex-row flex-ai-center flex-jc-sb">
+                    <a href=""><i class="fas fa-desktop"></i></a>
+                    <a href=""><i class="fas fa-list-ul"></i></a>
+                    <a href=""><i class="fas fa-volume-up"></i></a>
+                    <div class="volume-slider-container">
+                        <input type="range" min="1" max="100" value="50" class="volume-slider" id="myVol">
+                    </div>
+                    <a href=""><i class="fas fa-arrows-alt"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Copyright NeelBeats.com</p>
+    </footer>
+    
+</body>
+</html>

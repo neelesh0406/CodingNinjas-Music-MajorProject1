@@ -1,0 +1,165 @@
+/* Custom Variables */
+:root {
+    --page-color: #050722;
+    --heading-color: white;
+    --text-color: #b5b5b5;
+    --page-color-light: #09123b;
+    --link-color-hover: rgba(0, 255, 255, 0.835);
+}
+
+@media  only screen and (max-width: 768px) {
+    :root {
+        font-size: 11px;
+    }
+}
+
+
+/* Navigation Bar */
+
+nav {
+    justify-content: space-between;
+}
+
+.logo {
+    justify-content:flex-start;
+    width: 20%;
+}
+
+.logo img {
+    width: 30px;
+}
+
+#website-title {
+    font-size: .6rem;
+}
+
+#nav-fav {
+    display: none;
+}
+
+.search-bar {
+    width: 30%;
+}
+
+.notification-bell {
+    display: none;
+}
+
+.profile-pic {
+    width: 40px;
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+/* Main section - Artist Profile Playlist */
+
+#artist-profile-playlist {
+    width: 100%;
+}
+
+.artist-follow {
+    left: 35%;
+}
+
+@media  only screen and (max-width: 500px) {
+    
+    .artist-box {
+        flex-direction: column;
+        height: 66vh;
+    }
+
+    .artist-box-img {
+        max-height: 30vh;
+    }
+
+    .artist-box-img img {
+        margin-left: 19%;
+    }
+
+    .artist-left-content {
+        width: 45%;
+    }
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+/* More Section  */
+
+.more {
+    display: block;
+}
+
+.close {
+    display: block;
+}
+
+/* Playlist Aside Section  */
+
+#playlist-aside {
+    width: 50%;
+    height: 97vh;
+    display: none;
+    position: absolute;
+    top: 27vh;
+    right: 2%;
+    z-index: 3;
+    background-color: var(--page-color-light);
+    box-shadow: -5px 0px 10px 0 black;
+}
+
+@media  only screen and (max-width: 768px) {
+    #playlist-aside {
+        width: 70%;
+    }
+}
+
+#playlist-aside:target {
+    display: block;
+}
+
+.recently-played-content {
+    height: 45vh;
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+/* Bottom Player  */
+
+.bottom-player-outer > div {
+    width: 50%;
+}
+
+.bottom-player-outer > div:nth-child(2){
+    width: 50%;
+}
+
+.like-no-icon {
+    height: auto;
+}
+
+.bottom-play-progress {
+    flex-direction: row;
+}
+
+.progress-bar-status {
+    display: none;
+}
+
+.bottom-music-options {
+    display: none;
+}
+
+@media  only screen and (max-width: 768px) {
+    .bottom-player-outer > div {
+        width: 80%;
+    }
+
+    .bottom-player-outer > div:nth-child(2){
+        width: 15%;
+    }
+
+    .bottom-music-controls > a {
+        display: none;
+    }
+
+}

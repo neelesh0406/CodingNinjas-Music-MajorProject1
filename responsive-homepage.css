@@ -1,0 +1,275 @@
+
+/* Custom Variables */
+:root {
+    --page-color: #050722;
+    --heading-color: white;
+    --text-color: #b5b5b5;
+    --page-color-light: #09123b;
+    --link-color-hover: rgba(0, 255, 255, 0.835);
+}
+
+@media  only screen and (max-width: 768px) {
+    :root {
+        font-size: 11px;
+    }
+}
+
+
+/* Navigation Bar */
+
+nav {
+    justify-content: space-between;
+}
+
+.logo {
+    justify-content:flex-start;
+    width: 20%;
+}
+
+.logo img {
+    width: 30px;
+}
+
+#website-title {
+    font-size: .6rem;
+}
+
+#nav-fav {
+    display: none;
+}
+
+.search-bar {
+    width: 30%;
+}
+
+.notification-bell {
+    display: none;
+}
+
+.profile-pic {
+    width: 40px;
+}
+
+
+/* /////////////////////////////////////////////////////////// */
+
+main {
+    /* display: flex; */
+    margin: 2% 3% ;
+}
+
+/* Content Section */
+
+#content {
+    width: 100%;
+}
+
+/* Album Carousel  */
+
+#album-carousel img {
+    width: 47%;
+}
+
+/* Latest Release  */
+
+
+@media  only screen and (max-width: 768px) {
+    #latest-release {
+        width: 100%;
+    }
+
+    #latest-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: scroll;
+        height: 120px;
+        width: 100%;
+    }
+
+    #latest-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .song-container {
+        width: 50%;
+        height: 100px;
+        margin: 10px 5px;
+    }
+
+    .img-name-date-box {
+        flex-direction: column;
+        width: 47%;
+    }
+
+    .img-name-date-box img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* overlay play button with grey background when hovered */
+
+    .overlay-play {
+        overflow: hidden;
+        position: relative;
+        height: 160px;
+        width: 50px;
+    }
+
+    .overlay-play:hover i {
+        font-size: 20px;
+    }
+
+}
+
+
+/* Popular Artist */
+
+.artist-img-name h5{
+    font-size: .5rem;
+}
+
+/* Music Stations  */
+
+#music-stations {
+    flex-wrap: wrap;
+    height: 40vh;
+}
+
+.stations-genre {
+    height: 10vh;
+    width: 10vh;
+}
+
+#stations-outer {
+    width: 40%;
+    height: 10vh;
+    margin: 1vh 30%;
+}
+
+#stations-mid {
+    height: 14vh;
+    margin-top: -7vh;
+}
+
+#stations-inner {
+    height: 16vh;
+    margin-top: -8vh;
+}
+
+
+/* Music Mood */
+
+@media  only screen and (max-width: 768px) {
+
+    #music-mood {
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .mood-outer {
+        width: 100%;
+        margin: 2vh 0;
+    }
+
+}
+
+/* Latest English & latest Hindi */
+
+/* This list can be scrolled horizontally on devices with width<= 768px  */
+
+@media  only screen and (max-width: 768px) {
+
+    .language-songs-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .language-songs-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .song-img-name {
+        width: 25%;
+        margin: 0 2%;
+    }
+
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+/* More Section  */
+
+.more {
+    display: block;
+}
+
+.close {
+    display: block;
+}
+
+/* Aside Section  */
+
+#aside {
+    width: 50%;
+    display: none;
+    position: absolute;
+    top: 27vh;
+    right: 0;
+    z-index: 3;
+    background-color: var(--page-color-light);
+    box-shadow: -5px 0px 10px 0 black;
+}
+
+@media  only screen and (max-width: 768px) {
+    #aside {
+        width: 70%;
+    }
+}
+
+#aside:target {
+    display: block;
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+/* Bottom Player  */
+
+.bottom-player-outer > div {
+    width: 50%;
+}
+
+.bottom-player-outer > div:nth-child(2){
+    width: 50%;
+}
+
+.like-no-icon {
+    height: auto;
+}
+
+.bottom-play-progress {
+    flex-direction: row;
+}
+
+.progress-bar-status {
+    display: none;
+}
+
+.bottom-music-options {
+    display: none;
+}
+
+@media  only screen and (max-width: 768px) {
+    .bottom-player-outer > div {
+        width: 80%;
+    }
+
+    .bottom-player-outer > div:nth-child(2){
+        width: 15%;
+    }
+
+    .bottom-music-controls > a {
+        display: none;
+    }
+
+}
